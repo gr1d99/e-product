@@ -1,0 +1,20 @@
+require: rubocop-rails
+
+AllCops:
+  TargetRubyVersion: 2.6
+  NewCops: enable
+  Exclude:
+    - 'Gemfile'
+    - 'Guardfile'
+    - 'Rakefile'
+    - 'config.ru'
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'spec/spec_helper.rb'
+    - 'spec/rails_helper.rb'
+    - !ruby/regexp /old_and_unused\.rb$/
+    - 'node_modules/**/*'
+
+Style/Documentation:
+  Enabled: false
